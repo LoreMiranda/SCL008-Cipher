@@ -4,12 +4,38 @@
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   </head>
   <body>
     <div id="root">
-      <h1>Hola mundo!</h1>
+        <nav class="nav-extended">
+            <div class="nav-wrapper">
+              <a href="#!" class="brand-logo">Logo</a>
+              <ul class="right hide-on-med-and-down">
+                <li><a href="https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar" target="_blank">Más sobre Cifrado Caesar</a></li>
+              </ul>
+            </div>           
+          </nav>
+      
     </div>
+
+    <h3>Selecciona tu llave </h3>
+
+    <input type="number" autocomplete="off" id="key">
+    <br><br>
+    
+    <input type="text" autocomplete="off" placeholder="Aquí ingresa tu mensaje" id="fraseInicial"><br>
+
+    <h1>Elige tu opción</h1>
+
+    <button type="submit" id="btncode">Codificar</button>
+    <button type="submit" id="btnuncode">Decodificar</button><br>
+
+    <h3>Ya esta!!</h3>
+<div id="descifrado">Aqui aparece tu texto cifrado/descifrado</div>
+
     <script src="cipher.js"></script>
     <script src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   </body>
 </html>
