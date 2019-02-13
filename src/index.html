@@ -2,40 +2,99 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>AyudaPet</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
   <body>
     <div id="root">
-        <nav class="nav-extended">
-            <div class="nav-wrapper">
-              <a href="#!" class="brand-logo">Logo</a>
-              <ul class="right hide-on-med-and-down">
-                <li><a href="https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar" target="_blank">Más sobre Cifrado Caesar</a></li>
+
+      <!-- NavBar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" class="navBar1">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <img src="img/logoAyudaPet1.png" width="80" height="80" alt="">              
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar" target="_blank">Mas sobre Cifrado Caesar</a>
+                </li>                
               </ul>
-            </div>           
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Buscar en Google" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+              </form>
+            </div>
           </nav>
       
-    </div>
+
+    <!-- Modal Instrucciones -->
+
+    <button type="button" class="btn btn-light" data-toggle="modal" data-target="#exampleModalCenter">
+        Instrucciones
+      </button>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalCenterTitle">Instrucciones</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <li> Elige una llave para codificar tu denuncia.</li>
+              <li> Copia el texto y envíalo a las autoridades.</li>
+              <li> Asegúrate que quien recibe tu denuncia tenga la llave correcta. </li>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <h3>Selecciona tu llave </h3>
-
-    <input type="number" autocomplete="off" id="key">
+<!-- offset -->
+<div class="keys">
+    <input type="number" autocomplete="off" id="key"></input>
     <br><br>
-    
-    <input type="text" autocomplete="off" placeholder="Aquí ingresa tu mensaje" id="fraseInicial"><br>
+</div>    
+
+<!-- ingresar mensaje -->
+<div class="firstText">
+    <input type="text" autocomplete="off" placeholder="Aquí ingresa tu mensaje" id="firstText"><br>
+</div>
 
     <h1>Elige tu opción</h1>
 
-    <button type="submit" id="btncode">Codificar</button>
-    <button type="submit" id="btnuncode">Decodificar</button><br>
+    <!-- botones -->
+    <div class="buttons">
+    <button type="submit" id="buttonCode">Codificar</button>
+    <button type="submit" id="buttonUncode">Decodificar</button><br>
+    <button type="submit" id="buttonCopy" class="small material-icons">content_copy</button>
+    <button type="submit" id="buttonReset" class="small material-icons">delete</button>
+    </div>
 
     <h3>Ya esta!!</h3>
-<div id="descifrado">Aqui aparece tu texto cifrado/descifrado</div>
+
+    <!-- resultado -->
+<div id="resultText">
+<input type="text" class="decode-box">Aqui aparece tu denuncia cifrada/descifrada</input>
+</div>
+<br>
 
     <script src="cipher.js"></script>
     <script src="index.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp" crossorigin="anonymous"></script>
   </body>
 </html>

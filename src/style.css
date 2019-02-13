@@ -1,17 +1,42 @@
-h1{
+.navBar1{
+    background: black;
+    margin: 0%;
+    border: 0ch;
+    
+}
+
+
+body{
+    background-image: url(img/wallpaper.jpg);
+    background-size: cover;
+    text-align: center;
+}
+
+
+  
+/*h1{
     color: rgba(247, 247, 247, 0.979);
     font-size: 50px;
     font-family: 'Reenie Beanie', cursive;
     text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+}*/
+
+.buttons{
+   width: 150px;
+   height: 55px;
+   background-color: transparent;
+   color:white;
+   border: 1.5px solid rgb(255, 255, 255);
+   border-radius: 40px;
+   font-family: 'Actor', sans-serif;
+   font-size: 18px;
+   align-content: center;
+   
 }
 
-body{
-    background: green;
-}
     
-
-#descifrado { /* edición de caja de resultado */
-    border-radius: 5px;
+/*.decode-box { /* edición de caja de resultado */
+/*    border-radius: 5px;
     border: 1.5px solid rgb(255, 255, 255);
     padding: 3%;
     width: 20%;
@@ -20,15 +45,17 @@ body{
     text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
 }
 
-  #key{ /* edición input de offset */
-    width: 3%;
+.keys{ /* edición input de offset */
+/*    width: 4%;
+    height: 40%;
+    border-radius: 8px;
+    padding: 1em;
+    align-content: center; 
+}
+  #firstText{ /* edición input de ingreso del texto del usuario */
+/*    width: 20%;
     height: 25%;
     border-radius: 8px;
     padding: 1em;
 }
-  #fraseInicial{ /* edición input de ingreso del texto del usuario */
-    width: 20%;
-    height: 25%;
-    border-radius: 8px;
-    padding: 1em;
-}
+*/
