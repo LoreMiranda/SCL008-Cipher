@@ -50,7 +50,6 @@ h1{
     width: 300px;
 	background-color: white;
 	justify-content: center;
-	margin-left: 220px;
     border-radius: 10px;
     display: flex;
     padding: 2%;
@@ -58,16 +57,27 @@ h1{
 
 
 .buttons{
-    margin-left: 300px;
     justify-content: center;
     border-radius: 10px;
     
 }
 
-.decodeBox{
-    width: 50%;
-	margin-left: 550px;
+.decode-box{
+    justify-content: center;
     margin-bottom: 30px;
-    margin-left: 600px;
+	text-align: center;
     
+}
+
+.codedecode{
+	text-align: center;
+}
+
+.buttons{
+	text-align: center;
+}
+
+textarea{
+	border-radius: 5px;
+	text-align:center;
 }
