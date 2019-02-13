@@ -8,7 +8,9 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
   <body>
-    <div id="root">
+    <!-- INICIO DE HEADER  -->
+    <header class="colorBack">
+    <div id="root" class="container-fluid"></div>>
 
       <!-- NavBar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light" class="navBar1">
@@ -16,7 +18,7 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <img src="img/logoAyudaPet1.png" width="80" height="80" alt="">              
+                <img src="img/logoAyudaPet1.png" class="logoperrito" width="80" height="80" alt="">              
               <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
                   <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -31,13 +33,14 @@
               </form>
             </div>
           </nav>
-      
+        </header> 
 
     <!-- Modal Instrucciones -->
-
-    <button type="button" class="btn btn-light" data-toggle="modal" data-target="#exampleModalCenter">
+<div class="btnInstructions">
+    <button type="button" class="btn btn-light" id="btnInstructions" data-toggle="modal" data-target="#exampleModalCenter">
         Instrucciones
       </button>
+      </div>
       
       <!-- Modal -->
       <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -62,23 +65,32 @@
       </div>
 
     <h3>Selecciona tu llave </h3>
+
 <!-- offset -->
 <div class="keys">
     <input type="number" autocomplete="off" id="key"></input>
-    <br><br>
 </div>    
+<br>
 
-<!-- ingresar mensaje -->
-<div class="firstText">
-    <input type="text" autocomplete="off" placeholder="Aquí ingresa tu mensaje" id="firstText"><br>
-</div>
+    <!-- ingresar mensaje -->
+    <div class="textBox">
+      <textarea type="text" autocomplete="off" placeholder="Aquí ingresa tu mensaje" id="firstText" cols=30 rows=7></textarea>
+    </div>
+    <br>
+    <br>
+
 
     <h1>Elige tu opción</h1>
-
-    <!-- botones -->
-    <div class="buttons">
+    <br>
+    <!-- botones code uncode-->
+    <div class="codedecode">
     <button type="submit" id="buttonCode">Codificar</button>
     <button type="submit" id="buttonUncode">Decodificar</button><br>
+  </div>
+  <br>
+
+<!-- botones limpiar copiar -->
+    <div class="buttons">
     <button type="submit" id="buttonCopy" class="small material-icons">content_copy</button>
     <button type="submit" id="buttonReset" class="small material-icons">delete</button>
     </div>
@@ -86,8 +98,8 @@
     <h3>Ya esta!!</h3>
 
     <!-- resultado -->
-<div id="resultText">
-<input type="text" class="decode-box">Aqui aparece tu denuncia cifrada/descifrada</input>
+<div id="resultText" class="decode-box">
+<textarea type="text"> Aqui aparece tu denuncia cifrada/descifrada</textarea>
 </div>
 <br>
 
